@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adham Tamer — AI Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg,#0d0d0d,#1a1a1a);
+      padding: 80px 20px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: #00bfff;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+      background: #111;
+      z-index: 1000;
+    }
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00bfff;
+    }
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    #about {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #about img {
+      width: 200px;
+      border-radius: 50%;
+      border: 3px solid #00bfff;
+    }
+    #about .bio {
+      flex: 1;
+      min-width: 280px;
+    }
+    h2 {
+      color: #00bfff;
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #141414;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,191,255,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(0,191,255,0.3);
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background: #1a1a1a;
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: 1px solid #00bfff;
+      font-weight: 500;
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+    .contact a {
+      color: #00bfff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .contact a:hover {
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111;
+      color: #777;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Adham Tamer — AI Engineer</header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <img src="https://via.placeholder.com/200" alt="Adham Tamer">
+    <div class="bio">
+      <h2>About Me</h2>
+      <p>I’m <strong>Adham Tamer</strong>, a motivated AI engineering student with strong Python skills, specializing in machine learning, deep learning, and optimization-based solutions. Experienced in supervised and unsupervised learning, data analysis, and predictive modeling with <strong>Scikit-learn, Pandas, and NumPy</strong>.</p>
+      <p>Skilled in <strong>deep learning and computer vision</strong> using TensorFlow and Keras, with experience in <strong>Generative AI models</strong>. Certified in <strong>AWS AI Practitioner</strong> and AWS Academy Graduate in Cloud Architecting and Cloud Foundations.</p>
+      <p>My projects include <strong>Crime Classification (Random Forest)</strong>, <strong>Swarm Optimization presentations</strong>, and <strong>FIRE-EDGE: a real-time edge-AI firefighting system</strong>. Passionate about building efficient, sustainable AI solutions.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Crime Category Classification — GWO</h3>
+        <p>Classification model enhanced with Grey Wolf Optimization, improving feature selection and accuracy.</p>
+        <p><em>Tools:</em> Python, Scikit-learn, GWO</p>
+      </div>
+      <div class="project-card">
+        <h3>ABC Optimization Presentation</h3>
+        <p>Visual explanation of the ABC algorithm with practical optimization tasks and performance comparisons.</p>
+        <p><em>Tools:</em> ABC, Python, Visualization</p>
+      </div>
+      <div class="project-card">
+        <h3>Premier League 2023/24 Player Stats</h3>
+        <p>Predictive modeling and statistical analysis of EPL player data.</p>
+        <p><em>Tools:</em> Pandas, NumPy, Machine Learning</p>
+      </div>
+      <div class="project-card">
+        <h3>FIRE-EDGE: Real-Time Firefighting Edge System</h3>
+        <p>Edge-AI AR system with YOLOv8n, multi-sensor Kalman filter, enhancing firefighter safety in smoke-filled environments.</p>
+        <p><em>Tools:</em> YOLOv8, NVIDIA Jetson Xavier NX, Kalman Filter, ROS/Gazebo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">Machine Learning</span>
+      <span class="skill">Deep Learning</span>
+      <span class="skill">Computer Vision</span>
+      <span class="skill">Optimization (GWO, ABC)</span>
+      <span class="skill">Scikit-learn</span>
+      <span class="skill">Pandas & NumPy</span>
+      <span class="skill">Edge AI / YOLOv8</span>
+      <span class="skill">ROS / Gazebo</span>
+      <span class="skill">Cloud (AWS)</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:adhamt864@gmail.com">adhamt864@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/adhamtamer/" target="_blank">Adham Tamer</a></p>
+    <p>GitHub: <a href="https://github.com/Tamoora69" target="_blank">Tamoora69</a></p>
+  </section>
+
+  <footer>
+    © 2025 Adham Tamer — All Rights Reserved
+  </footer>
+
+</body>
+</html>
